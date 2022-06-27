@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <AssemblyName>AlexBins.Utils.AsyncEvent</AssemblyName>
+	  <RootNamespace>AlexBins.Utils.AsyncEvent</RootNamespace>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Authors>AlexBins</Authors>
+	  <Description>Provides an asynchronously raisable and awaitable event type</Description>
+  </PropertyGroup>
+
+</Project>
