@@ -1,4 +1,4 @@
-﻿namespace Bayoomed.NeoDoppler.Utils.AsyncEvent
+﻿namespace AlexBins.Utils.AsyncEvent
 {
     using System.Collections.Generic;
     using System.Linq;

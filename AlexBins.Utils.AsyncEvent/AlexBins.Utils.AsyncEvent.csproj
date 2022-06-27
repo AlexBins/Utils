@@ -9,6 +9,16 @@
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Authors>AlexBins</Authors>
 	  <Description>Provides an asynchronously raisable and awaitable event type</Description>
+	  <PackageLicenseFile>./LICENSE.txt</PackageLicenseFile>
+	  <PackageProjectUrl>https://github.com/AlexBins/Utils/tree/master/AlexBins.Utils.AsyncEvent</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/AlexBins/Utils/tree/master/AlexBins.Utils.AsyncEvent</RepositoryUrl>
+	  <PackageTags></PackageTags>
+	  <PackageVersion>1.0.1</PackageVersion>
+	  <Version>$(PackageVersion)</Version>
   </PropertyGroup>
+
+	<ItemGroup>
+		<None Include=".\LICENSE.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
