@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncEvent.Test", "test\Asy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexBins.Hosting.Mqtt", "AlexBins.Hosting.Mqtt\AlexBins.Hosting.Mqtt.csproj", "{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting.Wpf", "Hosting.Wpf\Hosting.Wpf.csproj", "{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting.Wpf.Sandbox", "Hosting.Wpf.Sandbox\Hosting.Wpf.Sandbox.csproj", "{3A704B7A-8443-4061-A197-C3AEEA968AAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
