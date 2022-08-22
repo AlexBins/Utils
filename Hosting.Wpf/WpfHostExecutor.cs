@@ -47,13 +47,7 @@ internal sealed class WpfHostExecutor
 
         using CancellationTokenRegistration registration = token.Register(() =>
         {
-            app.Dispatcher.Invoke(() =>
-            {
-                foreach (Window window in app.Windows)
-                {
-                    window.Close();
-                }
-            });
+            app.Dispatcher.Invoke(() => app.Shutdown());
         });
         
         _logger.LogInformation("Running UI");

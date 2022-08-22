@@ -6,11 +6,16 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>AlexBins</Authors>
     <Description>Support for WPF in Microsoft.Extensions.Hosting</Description>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/AlexBins/Utils/tree/master/Hosting.Wpf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexBins/Utils</RepositoryUrl>
+    <PackageTags>Microsoft.Extensions.Hosting;WPF;Generic Host</PackageTags>
+    <PackageId>$(Authors).$(AssemblyName)</PackageId>
+    <Company />
   </PropertyGroup>
 
   <ItemGroup>

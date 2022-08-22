@@ -1,8 +1,9 @@
-﻿using System.Windows.Controls;
-using System.Windows.Media;
+﻿using System.Windows;
 using Hosting.Wpf.Extensions;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 class Program
 {
@@ -10,12 +11,17 @@ class Program
     static int Main(string[] args)
     {
         var hostBuilder = new HostBuilder();
-        hostBuilder.ConfigureWpf(svc => svc.AddSingleton(
-            _ => new Page
-            {
-                Title = "Test Title",
-                Background = Brushes.Blue,
-            }));
+        hostBuilder.ConfigureAppConfiguration(config =>
+        {
+            config.AddCommandLine(args);
+            config.AddJsonFile("appsettings.json");
+        });
+        hostBuilder.ConfigureLogging(logging => logging.AddConsole());
+        hostBuilder.ConfigureWpf(svc =>
+        {
+            svc.AddSingleton(_ => new Window { Title = "My first Test Window" });
+            svc.AddSingleton(_ => new Window { Title = "My second Test Window" });
+        });
         return hostBuilder.RunWpf(CancellationToken.None);
     }
 }

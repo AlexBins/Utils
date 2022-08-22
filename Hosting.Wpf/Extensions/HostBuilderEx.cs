@@ -21,10 +21,9 @@ public static class HostBuilderEx
         Action<IServiceCollection>? uiConfiguration = default)
     {
         return hostBuilder.ConfigureServices(
-                svc =>
+                (ctx, svc) =>
                 {
                     svc.AddSingleton<WpfApplication>();
-                    svc.AddSingleton<PageHost>();
                     svc.AddSingleton<WpfHostExecutor>();
                 })
             .ConfigureServices(uiConfiguration ?? new Action<IServiceCollection>(_ => { }));
