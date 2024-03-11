@@ -1,9 +1,8 @@
-﻿<Application x:Class="Hosting.Wpf.WpfApplication"
-             x:ClassModifier="internal"
+﻿<Application x:Class="Hosting.Wpf.Template.Boilerplate.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             Startup="App_OnStartup"
-             Exit="App_OnExit">
+             xmlns:local="clr-namespace:Hosting.Wpf.Template"
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
          
     </Application.Resources>

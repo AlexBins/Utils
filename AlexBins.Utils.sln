@@ -5,13 +5,11 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexBins.Utils.AsyncEvent", "AlexBins.Utils.AsyncEvent\AlexBins.Utils.AsyncEvent.csproj", "{A9B85F4E-389D-4A13-B523-B0DC125E8750}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncEvent.Test", "test\AsyncEvent.Test\AsyncEvent.Test.csproj", "{9F9F0D20-0FD6-4697-BE80-46DB7D0C0140}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlexBins.Hosting.Mqtt", "AlexBins.Hosting.Mqtt\AlexBins.Hosting.Mqtt.csproj", "{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting.Wpf", "Hosting.Wpf\Hosting.Wpf.csproj", "{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf.Extensions.Hosting", "Wpf.Extensions.Hosting\Wpf.Extensions.Hosting.csproj", "{E6D0B481-2655-4129-921A-D10A8A05CC76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting.Wpf.Sandbox", "Hosting.Wpf.Sandbox\Hosting.Wpf.Sandbox.csproj", "{3A704B7A-8443-4061-A197-C3AEEA968AAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting.Wpf.Template", "Hosting.Wpf.Template\Hosting.Wpf.Template.csproj", "{ABD27C04-6E78-4BF4-9D2C-519B784C898B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,22 +21,18 @@ Global
 		{A9B85F4E-389D-4A13-B523-B0DC125E8750}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9B85F4E-389D-4A13-B523-B0DC125E8750}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9B85F4E-389D-4A13-B523-B0DC125E8750}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F9F0D20-0FD6-4697-BE80-46DB7D0C0140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F9F0D20-0FD6-4697-BE80-46DB7D0C0140}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F9F0D20-0FD6-4697-BE80-46DB7D0C0140}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F9F0D20-0FD6-4697-BE80-46DB7D0C0140}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85A36403-4FA8-446D-89D8-2E5EAB99CC5A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA2F8069-6BF4-4AE7-8991-9E8F116168BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A704B7A-8443-4061-A197-C3AEEA968AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D0B481-2655-4129-921A-D10A8A05CC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D0B481-2655-4129-921A-D10A8A05CC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D0B481-2655-4129-921A-D10A8A05CC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D0B481-2655-4129-921A-D10A8A05CC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD27C04-6E78-4BF4-9D2C-519B784C898B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD27C04-6E78-4BF4-9D2C-519B784C898B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD27C04-6E78-4BF4-9D2C-519B784C898B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD27C04-6E78-4BF4-9D2C-519B784C898B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
