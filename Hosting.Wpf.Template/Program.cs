@@ -16,7 +16,6 @@ public class Program
             .ConfigureWpf<App>((ctx, svc) =>
             {
                 svc.AddSingleton<Window, MainWindow>();
-                svc.AddSingleton(_ => new Window { Title = "Second Window" });
             })
             .UseSerilog((ctx, svc, config) =>
                 config
