@@ -188,7 +188,7 @@ internal class NavigationService(
             oldFrame,
             newFrame,
             true);
-        Navigated?.Invoke(this, args);
+        Navigating?.Invoke(this, args);
         await args.AwaitDeferralsAsync(cancel);
         return !args.IsCancelled;
     }
@@ -204,5 +204,15 @@ internal class NavigationService(
         var ctsTimeout = new CancellationTokenSource(configuration.NavigationTimeout.Value);
         timeoutToken = ctsTimeout.Token;
         return CancellationTokenSource.CreateLinkedTokenSource(ctsTimeout.Token, cancel);
+    }
+
+    public bool IsOnRoute(string route)
+    {
+        if (_navigationStack.Count == 0)
+        {
+            return false;
+        }
+
+        return _navigationStack[^1].Route.Name == route;
     }
 }
