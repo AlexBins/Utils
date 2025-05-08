@@ -1,4 +1,3 @@
-
 using AlexBins.Wpf.Navigation.Internal;
 using AlexBins.Wpf.Navigation.Types;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,13 +9,14 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddNavigationServices(this IServiceCollection services,
         NavigationServiceConfiguration? config = null)
         => services.AddNavigationServices(_ => config ?? new NavigationServiceConfiguration());
-    public static IServiceCollection AddNavigationServices(this IServiceCollection services, Func<IServiceProvider, NavigationServiceConfiguration>? configFactory = null)
+    public static IServiceCollection AddNavigationServices(this IServiceCollection services, Func<IServiceProvider, NavigationServiceConfiguration> configFactory)
     {
         return services
             .AddSingleton<INavigationService, NavigationService>()
             .AddSingleton<IUiProxy, UiProxy>()
-            .AddSingleton(provider => configFactory?.Invoke(provider) ?? new NavigationServiceConfiguration())
-            .AddHostedService<NavigationBackgroundService>();
+            .AddSingleton(configFactory.Invoke)
+            .AddHostedService<NavigationBackgroundService>()
+            .AddSingleton<IViewModelService, FrameworkElementViewModelService>();
     }
 
     public static IServiceCollection AddRoute<TRoute>(

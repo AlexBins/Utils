@@ -1,5 +1,4 @@
 using System.Collections.Immutable;
-using System.Windows;
 using AlexBins.Wpf.Navigation.Types;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -10,6 +9,7 @@ internal class NavigationService(
     ILogger<NavigationService> logger,
     IServiceProvider serviceProvider,
     IUiProxy uiProxy,
+    IViewModelService viewModelHandler,
     NavigationServiceConfiguration configuration,
     IEnumerable<Route> routes)
     : INavigationService
@@ -162,10 +162,7 @@ internal class NavigationService(
         {
             logger.LogInformation("Creating view model '{ViewModelType}'", frame.Route.ViewModelType.Name);
             frame.ViewModel = serviceProvider.GetRequiredService(frame.Route.ViewModelType);
-            if (frame.View is FrameworkElement dataContextHolder)
-            {
-                dataContextHolder.DataContext = frame.ViewModel;
-            }
+            viewModelHandler.TrySetViewModel(frame.View, frame.ViewModel);
         }
     }
 
