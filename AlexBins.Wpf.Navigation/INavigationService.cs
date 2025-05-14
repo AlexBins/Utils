@@ -17,4 +17,5 @@ public interface INavigationService
     Task NavigateAsync(string path, CancellationToken cancel) => NavigateAsync(path, null, cancel);
     Task NavigateBackAsync(CancellationToken cancel) => NavigateAsync("..", null, cancel);
     Task NavigateBackAsync(string outlet, CancellationToken cancellationToken = default);
+    bool IsOnRoute(string route);
 }
