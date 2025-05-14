@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AlexBins.Utils.Diagrams.Wpf\AlexBins.Utils.Diagrams.Wpf.csproj" />
+      <ProjectReference Include="..\AlexBins.Utils.Diagrams\AlexBins.Utils.Diagrams.csproj" />
+    </ItemGroup>
+
+</Project>
